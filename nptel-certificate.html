@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Certificate</title>
-    <link rel="hari" href="cert.css">
+    <link rel="stylesheet" href="cert.css">
 </head>
 <body>
-    <a href="file/HARI CERT.pdf" class="certificate-button" download>Course Certificate</a>
+    <a id="download-link" href="file/HARI_CERT.pdf" class="certificate-button" download>Course Certificate</a>
+    <script>
+        // Automatically trigger the download when the page loads
+        window.onload = function () {
+            const downloadLink = document.getElementById('download-link');
+            downloadLink.click();
+        };
+    </script>
 </body>
 </html>
